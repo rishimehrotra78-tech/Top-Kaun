@@ -24,7 +24,7 @@ export default function About() {
         </>
       )}
       <h2>Who runs it</h2>
-      <p>topkaun.lol is operated by <strong>{BUSINESS.legalName}</strong>, {fullAddress()}. Questions: <Link href="/contact">Contact us</Link>.</p>
+      <p>topkaun.lol is operated by <strong>{BUSINESS.legalName}</strong>, a proprietorship owned by {BUSINESS.proprietorName}, {fullAddress()} (GSTIN {BUSINESS.gstin}). Questions: <Link href="/contact">Contact us</Link>.</p>
     </LegalPage>
   );
 }

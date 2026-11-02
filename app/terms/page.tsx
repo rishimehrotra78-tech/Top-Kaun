@@ -41,7 +41,7 @@ export default function Terms() {
       <p>Deals and links on the site are offered by the listed brands, not by us. Purchases you make from a brand are between you and that brand. We remove listings that don&apos;t honour their deals when we&apos;re told about it.</p>
 
       <h2>7. Payments and invoices</h2>
-      <p>Payments are processed by Razorpay. We issue a GST tax invoice for each payment. We don&apos;t store card or UPI details.</p>
+      <p>Payments are processed by Razorpay. We issue a GST tax invoice for each payment. We don&apos;t store card or UPI details. The service is digital and delivered on the site as soon as payment is confirmed; see our <Link href="/shipping">Shipping and delivery policy</Link>.</p>
 
       <h2>8. Liability</h2>
       <p>The site is provided as it is. To the extent the law allows, our total liability to you for any claim is limited to the amount you paid us in the 12 months before the claim. We aren&apos;t liable for indirect losses, such as lost profit or business.</p>

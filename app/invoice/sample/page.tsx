@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InvoiceView from "@/components/InvoiceView";
+import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = { title: "Sample invoice", robots: { index: false, follow: false } };
 
@@ -8,6 +9,7 @@ export default function SampleInvoice() {
   return (
     <main className="page">
       <div className="wrap">
+        <div className="invbar noprint"><span className="muted">Keep this invoice for your GST records.</span><PrintButton /></div>
         <InvoiceView sample inv={{
           invoice_no: "TK/2627/000001",
           invoice_date: "2026-11-02",

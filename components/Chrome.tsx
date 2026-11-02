@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, fullAddress } from "@/lib/business";
 
 export function SiteHeader() {
   return (
@@ -10,6 +10,7 @@ export function SiteHeader() {
           <Link href="/#why">Why topkaun</Link>
           <Link href="/#how">How ranking works</Link>
           <Link href="/pricing">Pricing</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
     </header>
@@ -19,16 +20,22 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer>
-      <div className="wrap">
-        <span>topkaun.lol is operated by {BUSINESS.legalName} · Made in India</span>
-        <nav aria-label="Legal">
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+      <div className="wrap footgrid">
+        <nav aria-label="Policies" className="footlinks">
+          <Link href="/about">About us</Link>
+          <Link href="/contact">Contact us</Link>
           <Link href="/pricing">Pricing</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/refunds">Refunds</Link>
+          <Link href="/terms">Terms and conditions</Link>
+          <Link href="/privacy">Privacy policy</Link>
+          <Link href="/refunds">Cancellation and refunds</Link>
+          <Link href="/shipping">Shipping and delivery</Link>
         </nav>
+        <div className="biz">
+          <strong>{BUSINESS.legalName}</strong> (Proprietor: {BUSINESS.proprietorName}) operates topkaun.lol.<br />
+          {fullAddress()}<br />
+          GSTIN {BUSINESS.gstin} · {BUSINESS.email} · {BUSINESS.phone}<br />
+          Payments are processed securely by Razorpay. All prices in INR, inclusive of 18% GST.
+        </div>
       </div>
     </footer>
   );

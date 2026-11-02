@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { BUSINESS } from "@/lib/business";
 import { LegalPage } from "@/components/Legal";
 
-export const metadata: Metadata = { title: "Refund and cancellation policy" };
+export const metadata: Metadata = { title: "Cancellation and refund policy" };
 
 export default function Refunds() {
   return (
-    <LegalPage title="Refund and cancellation policy">
+    <LegalPage title="Cancellation and refund policy">
       <p>This policy covers payments for sponsored listings on topkaun.lol, operated by {BUSINESS.legalName}.</p>
 
       <h2>Full refunds</h2>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getInvoice } from "@/lib/supabase";
 import InvoiceView from "@/components/InvoiceView";
+import PrintButton from "@/components/PrintButton";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Invoice", robots: { index: false, follow: false } };
@@ -14,6 +15,7 @@ export default async function InvoicePage({ params }: { params: Promise<{ id: st
   return (
     <main className="page">
       <div className="wrap">
+        <div className="invbar noprint"><span className="muted">Keep this invoice for your GST records.</span><PrintButton /></div>
         <InvoiceView inv={{
           invoice_no: p.invoice_no,
           invoice_date: p.invoice_date,
@@ -25,7 +27,7 @@ export default async function InvoicePage({ params }: { params: Promise<{ id: st
           email: p.email,
           payment_id: p.razorpay_payment_id,
         }} />
-        <p className="fine noprint">To save a PDF, use your browser&apos;s Print option and choose &ldquo;Save as PDF&rdquo;.</p>
+        <p className="fine noprint">On the print screen, choose &ldquo;Save as PDF&rdquo; as the destination.</p>
       </div>
     </main>
   );
