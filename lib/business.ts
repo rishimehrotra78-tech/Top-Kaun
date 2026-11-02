@@ -7,7 +7,7 @@ export const BUSINESS = {
   legalName: "Shakkar Papa",                 // Trade name (spelling confirmed)
   // GSTIN shows a proprietorship, so the GST "legal name" is the owner's name as on PAN.
   proprietorName: "Ankita Agarwal",          // Legal name as on PAN
-  siteName: "topkaun.lol",
+  siteName: "eknumber.in",
   address: {
     line1: "310B, Bahadur Nagar",
     city: "Lakhimpur Kheri",
@@ -22,7 +22,7 @@ export const BUSINESS = {
   supportHours: "Mon–Sat, 10am–6pm IST",
   // SAC for selling internet advertising space. Confirm with your CA and make sure it's on your GST registration.
   sac: "998365",
-  serviceDescription: "Sponsored listing (internet advertising space) on topkaun.lol",
+  serviceDescription: "Sponsored listing (internet advertising space) on eknumber.in",
   lastUpdated: "2 November 2026",
 } as const;
 

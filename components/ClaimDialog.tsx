@@ -73,7 +73,7 @@ export default function ClaimDialog({ start, rankFor, onClose }: {
         order_id: o.orderId,
         amount: o.amountPaise,
         currency: "INR",
-        name: "topkaun.lol",
+        name: "eknumber.in",
         description: o.topUp ? `Ad spend for ${o.listingName}` : `Sponsored listing: ${o.listingName}`,
         prefill: { email: f.email },
         theme: { color: "#C4161C" },
@@ -123,7 +123,7 @@ export default function ClaimDialog({ start, rankFor, onClose }: {
         <label>One line about it<input id="fTag" maxLength={80} value={f.tagline} onChange={set("tagline")} placeholder="Single-origin spices, harvest date on every jar" /></label>
         <div className="r2">
           <label>Deal for visitors<input id="fDeal" maxLength={28} value={f.deal} onChange={set("deal")} placeholder="15% off" /></label>
-          <label>Coupon code<input id="fCode" maxLength={16} value={f.code} onChange={set("code")} placeholder="TOPKAUN15" style={{ textTransform: "uppercase" }} /></label>
+          <label>Coupon code<input id="fCode" maxLength={16} value={f.code} onChange={set("code")} placeholder="EKNUMBER15" style={{ textTransform: "uppercase" }} /></label>
         </div>
         <div className="r2">
           <label>Category<select id="fCat" value={f.category} onChange={set("category")}>{CATEGORIES.map((c) => <option key={c}>{c}</option>)}</select></label>

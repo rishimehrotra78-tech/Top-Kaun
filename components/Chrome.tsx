@@ -5,9 +5,9 @@ export function SiteHeader() {
   return (
     <header>
       <div className="wrap">
-        <Link className="logo" href="/">top<span>kaun</span>.lol</Link>
+        <Link className="logo" href="/">ek<span>number</span>.in</Link>
         <nav className="top" aria-label="Main">
-          <Link href="/#why">Why topkaun</Link>
+          <Link href="/#why">Why eknumber</Link>
           <Link href="/#how">How ranking works</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/contact">Contact</Link>
@@ -31,7 +31,7 @@ export function SiteFooter() {
           <Link href="/shipping">Shipping and delivery</Link>
         </nav>
         <div className="biz">
-          <strong>{BUSINESS.legalName}</strong> (Proprietor: {BUSINESS.proprietorName}) operates topkaun.lol.<br />
+          <strong>{BUSINESS.legalName}</strong> (Proprietor: {BUSINESS.proprietorName}) operates eknumber.in.<br />
           {fullAddress()}<br />
           GSTIN {BUSINESS.gstin} · {BUSINESS.email} · {BUSINESS.phone}<br />
           Payments are processed securely by Razorpay. All prices in INR, inclusive of 18% GST.

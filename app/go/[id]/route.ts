@@ -10,6 +10,6 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
   const { data } = await db().rpc("bump_click", { p_id: id });
   if (!data) return NextResponse.redirect(new URL("/", _req.url));
   const target = new URL(String(data));
-  target.searchParams.set("utm_source", "topkaun");
+  target.searchParams.set("utm_source", "eknumber");
   return NextResponse.redirect(target, 302);
 }

@@ -1,4 +1,4 @@
-export const SITE_NAME = "topkaun.lol";
+export const SITE_NAME = "eknumber.in";
 export const MIN_RUPEES = 49;
 export const MAX_RUPEES = 10_00_000; // ₹10 lakh per payment
 export const GST_RATE = 0.18;

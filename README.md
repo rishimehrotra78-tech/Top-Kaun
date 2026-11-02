@@ -1,4 +1,4 @@
-# topkaun.lol
+# eknumber.in
 
 India's sponsored leaderboard. Brands buy sponsored listings ranked by total ad spend; every listing carries an exclusive deal for visitors.
 
@@ -10,13 +10,13 @@ India's sponsored leaderboard. Brands buy sponsored listings ranked by total ad 
 2. Razorpay Checkout opens with UPI first (GPay, PhonePe, Paytm, any UPI ID or QR).
 3. On success the browser calls `POST /api/verify` (checks the signature) and Razorpay also calls `POST /api/webhooks/razorpay`. Both run `apply_payment()`, which applies each payment **exactly once** with a row lock — safe against double-counting and simultaneous payments.
 4. A new domain becomes a listing; an existing domain gets the amount added (top-up). Top-ups keep the original name and tagline, so nobody can rename someone else's listing.
-5. Outbound clicks go through `/go/<id>`, which counts the click and adds `utm_source=topkaun`.
+5. Outbound clicks go through `/go/<id>`, which counts the click and adds `utm_source=eknumber`.
 
 ## Setup (about 30 minutes)
 
 ### 1. Supabase
 1. Create a project at supabase.com (choose the Mumbai region).
-2. SQL Editor → run `supabase/schema.sql`, then `supabase/migrations/002_deals_invoices.sql`. (Already done for the live **topkaun** project.)
+2. SQL Editor → run `supabase/schema.sql`, then `supabase/migrations/002_deals_invoices.sql`. (Already done for the live Supabase project.) Then run `supabase/migrations/003_rename_eknumber.sql`.
 3. Project Settings → API: copy the **Project URL** and the **service_role** key.
 
 ### 2. Razorpay
@@ -36,7 +36,7 @@ Test with Razorpay's test UPI ID `success@razorpay` (and `failure@razorpay` to t
 ### 4. Deploy
 1. Push this folder to a GitHub repo.
 2. Import it on vercel.com → add the same environment variables → Deploy.
-3. Point topkaun.lol at Vercel (Domains → add → follow the DNS instructions at your registrar).
+3. Point eknumber.in at Vercel (Domains → add → follow the DNS instructions at your registrar).
 4. Update the Razorpay webhook URL to the live domain, then switch to **Live** keys.
 
 ## Before applying to Razorpay
@@ -44,7 +44,7 @@ Test with Razorpay's test UPI ID `success@razorpay` (and `failure@razorpay` to t
 1. Business details live in **`lib/business.ts`** (all filled in). Any value containing "TODO" is highlighted in yellow on the site.
 2. Deploy, then check these pages load: `/about`, `/contact`, `/pricing`, `/terms`, `/privacy`, `/refunds`.
 3. Open `/invoice/sample` → Print → Save as PDF. Upload that as the sample invoice.
-4. Business category: advertising / marketing services. Describe it as: "Sponsored listings (internet advertising space) on topkaun.lol, ranked by each brand's total ad spend."
+4. Business category: advertising / marketing services. Describe it as: "Sponsored listings (internet advertising space) on eknumber.in, ranked by each brand's total ad spend."
 5. Confirm with your CA that SAC 998365 is on your GST registration (add it as a non-core amendment if not).
 
 ## Running it
@@ -53,7 +53,7 @@ Test with Razorpay's test UPI ID `success@razorpay` (and `failure@razorpay` to t
 - **Blocked words** for new listings live in `app/api/orders/route.ts` (`BLOCKED`).
 - **Change minimum spend or categories:** `lib/config.ts`.
 - **Ad-fund counter on the home page:** update `site_stats` → `ad_fund_spent_paise` (in paise) when you spend on promotion.
-- **Invoices:** every paid payment gets a sequential number (`TK/2627/000001`) and a page at `/invoice/<payment id>`, linked after payment.
+- **Invoices:** every paid payment gets a sequential number (`EN/2627/000001`) and a page at `/invoice/<payment id>`, linked after payment.
 - **See revenue:** Razorpay dashboard, or `select sum(amount_paise)/100 from payments where status='paid';`
 
 ## Before going live — compliance checklist

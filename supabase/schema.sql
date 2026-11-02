@@ -1,4 +1,4 @@
--- topkaun.lol database schema
+-- eknumber.in database schema
 -- Run once in the Supabase SQL editor (Project → SQL → New query → paste → Run).
 
 create extension if not exists pgcrypto;

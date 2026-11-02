@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="box">
         <dl>
           <dt>Business name</dt><dd>{BUSINESS.legalName}</dd>
-          <dt>Website</dt><dd>topkaun.lol</dd>
+          <dt>Website</dt><dd>eknumber.in</dd>
           <dt>Address</dt><dd>{fullAddress()}</dd>
           <dt>Email</dt><dd>{BUSINESS.email}</dd>
           <dt>Phone</dt><dd><F v={BUSINESS.phone} /></dd>

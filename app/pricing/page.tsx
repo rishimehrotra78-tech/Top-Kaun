@@ -10,13 +10,13 @@ const EXAMPLES = [49, 499, 2000, 10000];
 export default function Pricing() {
   return (
     <LegalPage title="Pricing">
-      <p>A sponsored listing on topkaun.lol costs whatever you choose to spend, starting at <strong>{inr(MIN_RUPEES)}</strong>. Your position on the leaderboard is set by your total ad spend compared with other brands. There are no subscriptions, setup fees or recurring charges.</p>
+      <p>A sponsored listing on eknumber.in costs whatever you choose to spend, starting at <strong>{inr(MIN_RUPEES)}</strong>. Your position on the leaderboard is set by your total ad spend compared with other brands. There are no subscriptions, setup fees or recurring charges.</p>
       <h2>What you get</h2>
       <ul>
         <li>A listing with your brand name, one line about you, your deal and coupon code, and a link to your site or social page.</li>
         <li>A position on the all-time leaderboard and, on the day you pay, on Today&apos;s leaderboard.</li>
         <li>A public count of visits sent to you.</li>
-        <li>Your listing stays live for as long as topkaun.lol runs. There is no expiry.</li>
+        <li>Your listing stays live for as long as eknumber.in runs. There is no expiry.</li>
       </ul>
       <h2>Taxes</h2>
       <p>All prices include 18% GST. You get a GST tax invoice after payment. Add your GSTIN at checkout to claim input tax credit.</p>

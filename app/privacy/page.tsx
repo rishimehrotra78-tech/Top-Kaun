@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Privacy policy" };
 export default function Privacy() {
   return (
     <LegalPage title="Privacy policy">
-      <p>This policy explains what personal data {BUSINESS.legalName} ({fullAddress()}) collects through topkaun.lol, why, and your rights under the Digital Personal Data Protection Act, 2023.</p>
+      <p>This policy explains what personal data {BUSINESS.legalName} ({fullAddress()}) collects through eknumber.in, why, and your rights under the Digital Personal Data Protection Act, 2023.</p>
 
       <h2>What we collect</h2>
       <ul>

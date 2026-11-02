@@ -11,7 +11,7 @@ export default function SampleInvoice() {
       <div className="wrap">
         <div className="invbar noprint"><span className="muted">Keep this invoice for your GST records.</span><PrintButton /></div>
         <InvoiceView sample inv={{
-          invoice_no: "TK/2627/000001",
+          invoice_no: "EN/2627/000001",
           invoice_date: "2026-11-02",
           amount_paise: 49900,
           listing: "Masala Lab (masalalab.co)",

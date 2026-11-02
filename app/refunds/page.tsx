@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Cancellation and refund policy" };
 export default function Refunds() {
   return (
     <LegalPage title="Cancellation and refund policy">
-      <p>This policy covers payments for sponsored listings on topkaun.lol, operated by {BUSINESS.legalName}.</p>
+      <p>This policy covers payments for sponsored listings on eknumber.in, operated by {BUSINESS.legalName}.</p>
 
       <h2>Full refunds</h2>
       <p>You get a full refund in these cases:</p>

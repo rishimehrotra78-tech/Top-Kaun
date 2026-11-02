@@ -56,7 +56,7 @@ export default function InvoiceView({ inv, sample = false }: { inv: InvoiceData;
       <div className="parties">
         <div>
           <b>Supplier</b>
-          {BUSINESS.legalName} (topkaun.lol)<br />
+          {BUSINESS.legalName} (eknumber.in)<br />
           {fullAddress()}<br />
           State: {BUSINESS.address.state} ({BUSINESS.address.stateCode})<br />
           {BUSINESS.email}

@@ -2,16 +2,16 @@ import type { Metadata, Viewport } from "next";
 import { SiteFooter, SiteHeader } from "@/components/Chrome";
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://topkaun.lol";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eknumber.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "topkaun.lol — India's sponsored leaderboard", template: "%s · topkaun.lol" },
+  title: { default: "eknumber.in — India's sponsored leaderboard", template: "%s · eknumber.in" },
   description: "Indian brands rank by total ad spend, and every one of them offers you an exclusive deal.",
   openGraph: {
-    title: "topkaun.lol — Top pe kaun?",
+    title: "eknumber.in — Ek number brands, ek number deals",
     description: "India's sponsored leaderboard. Exclusive deals from every brand on the list.",
-    siteName: "topkaun.lol",
+    siteName: "eknumber.in",
     locale: "en_IN",
     type: "website",
   },

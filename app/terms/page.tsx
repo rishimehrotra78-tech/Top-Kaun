@@ -10,10 +10,10 @@ export default function Terms() {
   const n = BUSINESS.legalName;
   return (
     <LegalPage title="Terms and conditions">
-      <p>These terms apply to everyone who uses topkaun.lol (&ldquo;the site&rdquo;), which is operated by {n}, {fullAddress()} (&ldquo;we&rdquo;, &ldquo;us&rdquo;). By using the site or buying a listing, you agree to them.</p>
+      <p>These terms apply to everyone who uses eknumber.in (&ldquo;the site&rdquo;), which is operated by {n}, {fullAddress()} (&ldquo;we&rdquo;, &ldquo;us&rdquo;). By using the site or buying a listing, you agree to them.</p>
 
       <h2>1. What the service is</h2>
-      <p>topkaun.lol sells sponsored listings, which are internet advertising space. A listing shows a brand&apos;s name, a short description, a deal for visitors and a link. Listings are ranked by each brand&apos;s total ad spend on the site. The site is advertising. It is not an auction, a game, a contest or a lottery, and nobody wins money, prizes or rewards through it.</p>
+      <p>eknumber.in sells sponsored listings, which are internet advertising space. A listing shows a brand&apos;s name, a short description, a deal for visitors and a link. Listings are ranked by each brand&apos;s total ad spend on the site. The site is advertising. It is not an auction, a game, a contest or a lottery, and nobody wins money, prizes or rewards through it.</p>
 
       <h2>2. Who can buy a listing</h2>
       <p>You must be at least 18 years old and buying for a business, brand, product or creator you own or are authorised to promote. You must give accurate billing details.</p>
@@ -29,7 +29,7 @@ export default function Terms() {
 
       <h2>4. Your listing content and deal</h2>
       <ul>
-        <li>Every listing must offer a genuine deal for topkaun visitors, and you must honour the coupon code you list for at least 30 days from listing. You are responsible for your deal, products and customer service.</li>
+        <li>Every listing must offer a genuine deal for eknumber visitors, and you must honour the coupon code you list for at least 30 days from listing. You are responsible for your deal, products and customer service.</li>
         <li>Your content must be accurate and lawful, and must not infringe anyone&apos;s trademark, copyright or other rights.</li>
         <li>You give us permission to display your name, description, deal and link on the site and in promotion of the site.</li>
       </ul>

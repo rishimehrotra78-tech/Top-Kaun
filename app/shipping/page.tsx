@@ -8,11 +8,11 @@ export const metadata: Metadata = { title: "Shipping and delivery policy" };
 export default function Shipping() {
   return (
     <LegalPage title="Shipping and delivery policy">
-      <p>topkaun.lol, operated by {BUSINESS.legalName}, sells a digital advertising service: sponsored listings on our website. We don&apos;t sell or ship any physical products.</p>
+      <p>eknumber.in, operated by {BUSINESS.legalName}, sells a digital advertising service: sponsored listings on our website. We don&apos;t sell or ship any physical products.</p>
 
       <h2>How the service is delivered</h2>
       <ul>
-        <li>Your sponsored listing is published on topkaun.lol automatically as soon as your payment is confirmed, usually within a minute.</li>
+        <li>Your sponsored listing is published on eknumber.in automatically as soon as your payment is confirmed, usually within a minute.</li>
         <li>Your GST tax invoice is available straight after payment, with a link on the confirmation screen.</li>
         <li>Nothing is sent by post or courier, so there are no shipping charges and no delivery address is needed.</li>
       </ul>

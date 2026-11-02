@@ -44,7 +44,7 @@ export default function Home({ view, board, allTime, stats }: Props) {
     <main>
       <div className="wrap">
         <div className="intro">
-          <h1>India&apos;s sponsored leaderboard. <em>Top pe kaun?</em></h1>
+          <h1>India&apos;s sponsored leaderboard. <em>Ek number deals.</em></h1>
           <p>Brands rank by total ad spend. You get an exclusive deal from every one of them.</p>
           <div className="stats">
             <span><b>{inr(stats.totalRupees)}</b> ad spend</span>
@@ -112,12 +112,12 @@ export default function Home({ view, board, allTime, stats }: Props) {
         {rows.length > shown && <button className="more" type="button" onClick={() => setShown(shown + PAGE)}>Show more</button>}
 
         <section className="block" id="why">
-          <h2>Why topkaun</h2>
+          <h2>Why eknumber</h2>
           <div className="two">
             <div className="card">
               <h3>For shoppers</h3>
               <ul>
-                <li><b>Exclusive codes.</b> Every brand here offers a deal for topkaun visitors.</li>
+                <li><b>Exclusive codes.</b> Every brand here offers a deal for eknumber visitors.</li>
                 <li><b>New Indian brands first.</b> D2C launches, apps and local favourites in one list.</li>
                 <li><b>Changes every day.</b> The ranking moves as brands spend, so there&apos;s always something new.</li>
               </ul>
@@ -150,7 +150,7 @@ export default function Home({ view, board, allTime, stats }: Props) {
             <li><b>Your position is your total ad spend.</b> Add more any time and it adds up.</li>
             <li><b>To move above a brand,</b> your total needs to be at least ₹1 more than theirs.</li>
             <li><b>Your listing stays up</b> for as long as the site runs. There&apos;s no expiry.</li>
-            <li><b>Every listing must include a working deal</b> for topkaun visitors.</li>
+            <li><b>Every listing must include a working deal</b> for eknumber visitors.</li>
             <li><b>We review every listing within 24 hours.</b> No betting, adult content, crypto schemes or instant-loan apps. <Link href="/refunds">Rejected listings get a full refund</Link> within 7 business days.</li>
           </ol>
         </section>

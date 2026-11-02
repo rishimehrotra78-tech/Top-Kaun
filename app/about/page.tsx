@@ -8,10 +8,10 @@ export const metadata: Metadata = { title: "About" };
 
 export default function About() {
   return (
-    <LegalPage title="About topkaun" updated={false}>
-      <p>topkaun.lol is a sponsored leaderboard for Indian brands. Brands buy a sponsored listing, and their position on the list is set by their total ad spend. Every listing includes an exclusive deal for people who visit through topkaun.</p>
+    <LegalPage title="About eknumber" updated={false}>
+      <p>eknumber.in is a sponsored leaderboard for Indian brands. Brands buy a sponsored listing, and their position on the list is set by their total ad spend. Every listing includes an exclusive deal for people who visit through topkaun.</p>
       <h2>What we sell</h2>
-      <p>We sell internet advertising space: a sponsored listing on topkaun.lol with a link to the brand&apos;s website or social page. The brand chooses how much to spend, from ₹49 upwards. There are no subscriptions, auctions or recurring charges. See <Link href="/pricing">Pricing</Link>.</p>
+      <p>We sell internet advertising space: a sponsored listing on eknumber.in with a link to the brand&apos;s website or social page. The brand chooses how much to spend, from ₹49 upwards. There are no subscriptions, auctions or recurring charges. See <Link href="/pricing">Pricing</Link>.</p>
       <h2>Who it&apos;s for</h2>
       <ul>
         <li><strong>Brands</strong> — D2C labels, apps, SaaS products, agencies, creators and local businesses that want visibility quickly, without running their own ad accounts.</li>
@@ -24,7 +24,7 @@ export default function About() {
         </>
       )}
       <h2>Who runs it</h2>
-      <p>topkaun.lol is operated by <strong>{BUSINESS.legalName}</strong>, a proprietorship owned by {BUSINESS.proprietorName}, {fullAddress()} (GSTIN {BUSINESS.gstin}). Questions: <Link href="/contact">Contact us</Link>.</p>
+      <p>eknumber.in is operated by <strong>{BUSINESS.legalName}</strong>, a proprietorship owned by {BUSINESS.proprietorName}, {fullAddress()} (GSTIN {BUSINESS.gstin}). Questions: <Link href="/contact">Contact us</Link>.</p>
     </LegalPage>
   );
 }

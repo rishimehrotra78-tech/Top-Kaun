@@ -9,7 +9,7 @@ alter table payments add column if not exists code text not null default '';
 alter table payments add column if not exists bill_name text;
 alter table payments add column if not exists bill_state text;          -- place of supply (Indian state)
 alter table payments add column if not exists bill_gstin text;          -- optional, for B2B input credit
-alter table payments add column if not exists invoice_no text unique;   -- e.g. TK/2627/000001
+alter table payments add column if not exists invoice_no text unique;   -- e.g. EN/2627/000001
 alter table payments add column if not exists invoice_date date;
 
 -- One running counter per financial year (Apr–Mar), so invoice numbers are sequential and never reused.
@@ -83,7 +83,7 @@ begin
 
   update payments set status = 'paid', razorpay_payment_id = p_payment_id,
     paid_at = now(), listing_id = l.id,
-    invoice_no = 'TK/' || v_fy || '/' || lpad(n::text, 6, '0'), invoice_date = d
+    invoice_no = 'EN/' || v_fy || '/' || lpad(n::text, 6, '0'), invoice_date = d
   where id = p.id;
 
   select count(*) + 1 into r from listings x
